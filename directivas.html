@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <main>
+        <h1 v-show="conectado">Estoy Conectado</h1>
+
+        <h2 v-if="edad < 18">No Pudes entrar.</h2>
+        <h2 v-else-if="edad > 200">Eres inmortal.</h2>
+        <h2 v-else>Puedes entrar.</h2>
+
+        <template v-if="conectado">
+            <h3>bienvenido fredy</h3>
+            <ul>
+                <li>hola</li>
+                <li>fredy</li>
+            </ul>
+        </template>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="directivas.js"></script>
+</body>
+</html>
